@@ -5,6 +5,7 @@ const API = axios.create({
   baseURL: process.env.REACT_APP_API_URL || "http://localhost:3000",
 });
 
+console.log("process env", process.env.REACT_APP_API_URL)
 
 // Attach token automatically
 API.interceptors.request.use((config) => {
